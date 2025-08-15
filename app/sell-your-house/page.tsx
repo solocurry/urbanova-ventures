@@ -282,38 +282,40 @@ export default function SellYourHousePage() {
       <section className="py-16 bg-slate-800 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
-            {/* Left side - Benefits */}
-            <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold tracking-tight text-white mb-6">Get Your Cash Offer Today</h2>
-              <p className="text-lg text-gray-300 mb-8">
-                Fill out the form to get started. We'll contact you within 24 hours with a fair, no-obligation cash
-                offer for your property.
-              </p>
+            {/* Left side - Benefits - Push to far left */}
+            <div className="lg:col-span-2 lg:pr-8">
+              <div className="max-w-none">
+                <h2 className="text-3xl font-bold tracking-tight text-white mb-6">Get Your Cash Offer Today</h2>
+                <p className="text-lg text-gray-300 mb-8">
+                  Fill out the form to get started. We'll contact you within 24 hours with a fair, no-obligation cash
+                  offer for your property.
+                </p>
 
-              <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="bg-urbanova-tan p-2 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-black" />
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-urbanova-tan p-2 rounded-full flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-black" />
+                    </div>
+                    <p className="text-white font-medium">No obligation to accept</p>
                   </div>
-                  <p className="text-white font-medium">No obligation to accept</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-urbanova-tan p-2 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-black" />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-urbanova-tan p-2 rounded-full flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-black" />
+                    </div>
+                    <p className="text-white font-medium">No repairs or cleaning needed</p>
                   </div>
-                  <p className="text-white font-medium">No repairs or cleaning needed</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-urbanova-tan p-2 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-black" />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-urbanova-tan p-2 rounded-full flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-black" />
+                    </div>
+                    <p className="text-white font-medium">No realtor commissions or fees</p>
                   </div>
-                  <p className="text-white font-medium">No realtor commissions or fees</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="bg-urbanova-tan p-2 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-black" />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-urbanova-tan p-2 rounded-full flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-black" />
+                    </div>
+                    <p className="text-white font-medium">Close on your timeline</p>
                   </div>
-                  <p className="text-white font-medium">Close on your timeline</p>
                 </div>
               </div>
             </div>
