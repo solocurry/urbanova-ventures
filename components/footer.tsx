@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
 
-              {/* Facebook Page Plugin Embed (no profile image) */}
+              {/* Facebook Page Plugin Embed - profile picture only */}
               <div id="fb-root"></div>
               <Script
                 async
@@ -53,12 +53,12 @@ const Footer: React.FC = () => {
               <div
                 className="fb-page"
                 data-href="https://www.facebook.com/profile.php?id=61578520107147"
-                data-tabs="timeline"
-                data-width=""
-                data-height=""
-                data-small-header="false"
+                data-tabs=""
+                data-width="100"
+                data-height="130"
+                data-small-header="true"
                 data-adapt-container-width="true"
-                data-hide-cover="false"
+                data-hide-cover="true"
                 data-show-facepile="true"
               />
             </div>
@@ -125,4 +125,60 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/sell-your-house/divorce" className="hover:text-urbanova-tan transiti
+                  <Link href="/sell-your-house/divorce" className="hover:text-urbanova-tan transition-colors">
+                    Divorce Property Sales
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sell-your-house/bad-tenants" className="hover:text-urbanova-tan transition-colors">
+                    Problem Tenant Properties
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Us */}
+            <div>
+              <h4 className="text-base font-semibold mb-3 text-white">Contact Us</h4>
+              <ul className="space-y-2 text-gray-300 text-sm">
+                <li className="text-white font-medium">Cleveland, OH</li>
+                <li>
+                  <a href="tel:+12164527381" className="hover:text-urbanova-tan transition-colors font-medium">
+                    (216) 452-7381
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:isaiahharrisw@gmail.com" className="hover:text-urbanova-tan transition-colors">
+                    isaiahharrisw@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr className="my-6 border-gray-600" />
+
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
+              <p className="text-gray-400">© 2024 Urbanova Ventures. All rights reserved.</p>
+              <div className="flex space-x-4">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-urbanova-tan transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms-of-service" className="text-gray-400 hover:text-urbanova-tan transition-colors">
+                  Terms of Service
+                </Link>
+                <span className="text-gray-400">Disclaimer</span>
+              </div>
+            </div>
+            <div>
+              <p className="text-gray-400 text-sm">Serving Cleveland, Akron & Northeast Ohio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
