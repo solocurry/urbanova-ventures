@@ -1,6 +1,7 @@
 import type React from "react"
 import Link from "next/link"
 import { Facebook } from "lucide-react"
+import Script from "next/script"
 
 const Footer: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const Footer: React.FC = () => {
               <p className="text-gray-300 mb-4 text-sm leading-relaxed">
                 Creating win-win solutions for property owners and investors in the Cleveland area.
               </p>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 mb-4">
                 <a
                   href="https://facebook.com/urbanovaventures"
                   target="_blank"
@@ -38,6 +39,36 @@ const Footer: React.FC = () => {
                   <Facebook className="h-4 w-4" />
                   <span className="text-sm font-medium">Follow Us</span>
                 </a>
+              </div>
+
+              {/* Facebook Page Plugin Embed */}
+              <div id="fb-root"></div>
+              <Script
+                async
+                defer
+                crossOrigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"
+                strategy="afterInteractive"
+              />
+              <div
+                className="fb-page"
+                data-href="https://www.facebook.com/profile.php?id=61578520107147"
+                data-tabs="timeline"
+                data-width=""
+                data-height=""
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/profile.php?id=61578520107147"
+                  className="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/profile.php?id=61578520107147">
+                    Urbanova Ventures
+                  </a>
+                </blockquote>
               </div>
             </div>
 
