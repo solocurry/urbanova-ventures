@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               </p>
               <div className="flex items-center space-x-3 mb-4">
                 <a
-                  href="https://facebook.com/urbanovaventures"
+                  href="https://www.facebook.com/profile.php?id=61578520107147"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 px-3 py-2 rounded-lg hover:bg-urbanova-tan hover:text-black transition-colors border border-gray-700 flex items-center space-x-2"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
 
-              {/* Facebook Page Plugin Embed */}
+              {/* Facebook Page Plugin Embed (no profile image) */}
               <div id="fb-root"></div>
               <Script
                 async
@@ -60,16 +60,7 @@ const Footer: React.FC = () => {
                 data-adapt-container-width="true"
                 data-hide-cover="false"
                 data-show-facepile="true"
-              >
-                <blockquote
-                  cite="https://www.facebook.com/profile.php?id=61578520107147"
-                  className="fb-xfbml-parse-ignore"
-                >
-                  <a href="https://www.facebook.com/profile.php?id=61578520107147">
-                    Urbanova Ventures
-                  </a>
-                </blockquote>
-              </div>
+              />
             </div>
 
             {/* Quick Links */}
@@ -134,60 +125,4 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/sell-your-house/divorce" className="hover:text-urbanova-tan transition-colors">
-                    Divorce Property Sales
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sell-your-house/bad-tenants" className="hover:text-urbanova-tan transition-colors">
-                    Problem Tenant Properties
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Us */}
-            <div>
-              <h4 className="text-base font-semibold mb-3 text-white">Contact Us</h4>
-              <ul className="space-y-2 text-gray-300 text-sm">
-                <li className="text-white font-medium">Cleveland, OH</li>
-                <li>
-                  <a href="tel:+12164527381" className="hover:text-urbanova-tan transition-colors font-medium">
-                    (216) 452-7381
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:isaiahharrisw@gmail.com" className="hover:text-urbanova-tan transition-colors">
-                    isaiahharrisw@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <hr className="my-6 border-gray-600" />
-
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
-              <p className="text-gray-400">© 2024 Urbanova Ventures. All rights reserved.</p>
-              <div className="flex space-x-4">
-                <Link href="/privacy-policy" className="text-gray-400 hover:text-urbanova-tan transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms-of-service" className="text-gray-400 hover:text-urbanova-tan transition-colors">
-                  Terms of Service
-                </Link>
-                <span className="text-gray-400">Disclaimer</span>
-              </div>
-            </div>
-            <div>
-              <p className="text-gray-400 text-sm">Serving Cleveland, Akron & Northeast Ohio</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
-
-export default Footer
+                  <Link href="/sell-your-house/divorce" className="hover:text-urbanova-tan transiti
